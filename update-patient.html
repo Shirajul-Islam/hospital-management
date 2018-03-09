@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen"> 
+<link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" media="screen"> 
+
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+
+  <body>
+    <div style="background-color:white; margin-top: 100px; margin-left: 310px;width:800px; border-style:groove; border-color:#FF0099" align="center">
+        <div style="background-color:#3366FF; width:794px; padding-top:1px; padding-bottom:1px;" align="center">
+        <h3 style="color:#CC3300;"><b>Update patient's list</b></h3></div>
+         <hr>
+
+<form method="post"  class="form-horizontal" role="form" align="center">
+    <div class="form-group" align="center">
+        <label class="control-label col-sm-4" for="name">Name</label>
+        <div class="col-sm-6">
+            <input type="text" name="name" value="<?php echo $name; ?>" required="true" class="form-control"/>
+        </div>
+    </div>  
+    <div class="form-group">
+        <label class="control-label col-sm-4" for="addr">Address</label>
+        <div class="col-sm-6">            
+            <input type="text" name="addr" value="<?php echo $addres; ?>" required="true" class="form-control"/> 
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-4" for="gen">Gender</label>
+        <div class="col-sm-6">            
+            <input type="text" name="gen" value="<?php echo $spec; ?>"  required="true" class="form-control"/> 
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-4" for="jdate">Date</label>
+        <div class="col-sm-6">            
+            <input type="date" name="jdate" value="<?php echo $join; ?>" required="true" class="form-control"/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-4" for="mobile">Mobile</label>
+        <div class="col-sm-6">            
+            <input type="number" name="mobile" value="<?php echo $contrac; ?>"  placeholder="Enter mobile number" required="true" class="form-control"/> 
+        </div>
+    </div>
+    <div class="form-group"> 
+        <div class="col-sm-offset-2 col-sm-8">  
+          <input type="submit" name="save" value="Submit" class="btn btn-primary" />
+         </div>
+     </div>     
+</form>
+    
+  </body>
+</html>
